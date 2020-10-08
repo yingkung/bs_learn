@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-6 内联样式</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 常用内联样式 -->
+                <!-- 1. 文本高亮显示，默认为黄色 -->
+                <p>PHP中文网是一个<mark>永久免费</mark>的web开发学习网站</p>
+
+                <!-- 2. 给文本添加删除线，提示用户信息无效，通常用来做对比 -->
+                <p>VIP课程原价：<del>999</del>活动优惠价：699</p>
+                <!-- 无用文本， s 和del显示效果相同 -->
+                <p>VIP课程原价：<s>999</s>活动优惠价：699</p>
+            
+                <!-- 3. 插入文本，文本用下划线标出 -->
+                <p>欢迎来PHP中文网学习<ins>Bootstrap</ins>入门课程</p>
+                <!-- u标签给文本添加下划线，效果和ins相同 -->
+                <p>欢迎来PHP中文网学习<u>Bootstrap</u>入门课程</p>
+            
+                <!-- 4. 在当前段落中添加小号文本 -->
+                <p>正常文本<small>小号文本</small>正常文本</p>
+            
+                <!-- 5. strong 加粗 -->
+                <p>正常文本<strong>加粗文本</strong>正常文本</p>
+            
+                <!-- 6. 左对齐，右对齐，居中， 是否换行 -->
+                <p class="text-left">PHP中文网</p>
+                <p class="text-right">PHP中文网</p>
+                <p class="text-center">PHP中文网</p>
+                <p class="text-justify">在前端开发的过程中，一大部分的工作是写 HTML、CSS 代码。特别是手动编写 HTML 代码的时候，效率会特别低下，因为需要敲打很多尖括号，而且很多标签都需要闭合标签等</p>
+                <p class="nowrap">在前端开发的过程中，一大部分的工作是写 HTML、CSS 代码。特别是手动编写 HTML 代码的时候，效率会特别低下，因为需要敲打很多尖括号，而且很多标签都需要闭合标签等</p>
+            
+                <!-- 7. 大小写 -->
+                <p>所有小写：<span class="text-lowercase">www.PHP.COM</span></p>
+                <p>所有大写：<span class="text-uppercase">www.PHP.com</span></p>
+                <p>首字母大写：<span class="text-capitalize">www.php.com</span></p>
+            
+                <!-- 8. 缩略语 -->
+                <abbr title="javascript">JS</abbr>
+            
+                <!-- 9. 引用 -->
+                <blockquote>
+                    <p>PHP: 最流行的脚本语言</p>
+                </blockquote>
+            
+                <!-- 10.footer -->
+                <blockquote>
+                    <p>PHP: 最流行的脚本语言</p>
+                    <footer>官网：<cite title="官网">wwwphp.net</cite></footer>
+                </blockquote>
+            
+                <!-- 11. 引用文本右对齐 -->
+                <blockquote class="blockquote-reverse">
+                    <p>PHP: 最流行的脚本语言</p>
+                    <footer>官网：<cite title="官网">wwwphp.net</cite></footer>
+                </blockquote>
+            
+                <!-- 12. 无序列表 -->
+                <ul>
+                    <li>列表项1</li>
+                    <li>列表项2</li>
+                    <li>列表项3</li>
+                    <ul>
+                        <li>子列表项1</li>
+                        <li>子列表项2</li>
+                        <li>子列表项3</li>
+                    </ul>
+                </ul>
+            
+                <!-- 13. 有序列表 -->
+                <ol>
+                    <li>列表项1</li>
+                    <li>列表项2</li>
+                    <li>列表项3</li>
+                    <ol>
+                        <li>子列表项1</li>
+                        <li>子列表项2</li>
+                        <li>子列表项3</li>
+                    </ol>
+                </ol>
+            
+            
+                <!-- 14. 无样式列表 -->
+                <h3>无样式列表</h3>
+                <ul class="list-unstyled">
+                    <li>列表项1</li>
+                    <li>列表项2</li>
+                    <li>列表项3</li>
+                    <ul class="list-unstyled">
+                        <li>子列表项1</li>
+                        <li>子列表项2</li>
+                        <li>子列表项3</li>
+                    </ul>
+                </ul>
+            
+                <!-- 15. 内联列表 - 用于导航栏 -->
+                <h3>内联列表</h3>
+                <ul class="list-inline">
+                    <li>列表1</li>
+                    <li>列表2</li>
+                    <li>列表3</li>
+                </ul>
+            
+                <!-- 16. 描述型列表- dl -->
+                <h3>描述性列表</h3>
+                <dl>
+                    <dt>PHP:</dt>
+                    <dd>最流行的web应用开发语言</dd>
+            
+                    <dt>MySQL:</dt>
+                    <dd>使用广泛的免费数据库管理系统</dd>
+            
+                    <dt>ThinkPHP</dt>
+                    <dd>轻量级php应用开发框架</dd>
+                </dl>
+            
+            
+                <!-- 17. 水平排列的描述型列表 -->
+                <h3>水平排列的描述型列表</h3>
+                <dl class="dl-horizontal"> 
+                    <dt>PHP:</dt>
+                    <dd>最流行的web应用开发语言</dd>
+            
+                    <dt>MySQL:</dt>
+                    <dd>使用广泛的免费数据库管理系统</dd>
+            
+                    <dt>ThinkPHP</dt>
+                    <dd>轻量级php应用开发框架</dd>
+                </dl>
+                        
+                
+    </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

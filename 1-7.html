@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-7 代码文本的处理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 1. 内联代码： 通过code标签包裹内联样式的代码片段 -->
+                <p>PHP脚本程序是用<code>&lt;?php</code>和<code>&gt;</code>包裹的代码</p>
+
+                <!-- 2. 用户键盘输入内容 -->
+                <p>为防止内容丢失，应该养成边写边按<kbd>ctrl+s</kbd>的习惯</p>
+                <hr>
+
+                <!-- 3. 在页面插入代码块 -->
+                <pre class="pre-scrollable">
+                    &lt;!DOCTYPE html>
+                    &lt;html lang="en">
+                    &lt;head>
+                        &lt;meta charset="UTF-8">
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        &lt;title>1-7 代码文本的处理</title>
+                        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+                        &lt;script src="js/jquery-3.5.1.min.js"></script>
+                        &lt;script src="js/bootstrap.min.js"></script>
+                    &lt;/head>
+                    &lt;body>
+                        &lt;!-- 文档主体内容 -->
+                    &lt;/body>
+                </pre>
+                <hr>
+
+                <!-- 4. 变量， var标记，斜体显示 -->
+                <var>f(x)=2x+my</var>
+                <p>请问：<var>15+28*39=？</var></p>
+                <hr>
+
+                <!-- 5. 标记输出内容 -->
+                <p>代码<code>&lt;?php echo "欢迎来到php中文网" &gt;</code></p>
+                <samp>欢迎来到php中文网</samp>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
